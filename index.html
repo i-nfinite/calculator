@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body bgcolor="black">
+<table border="2"  align="center" bgcolor="yellow" >
+<tr bgcolor="green">
+<td colspan="3">
+<input type="textfield" id="x" value=""readonly> </td>
+</tr>
+<tr bgcolor="blue">
+<td type="button" value="1" onclick="x.value +='1'">1</td>
+<td type="button" value="2" onclick="x.value +='2'">2</td>
+<td type="button" value="3" onclick="x.value +='3'">3</td>
+</tr>
+<tr bgcolor="orange">
+<td type="button" value="4" onclick="x.value +='4'">4</td>
+<td type="button" value="5" onclick="x.value +='5'">5</td>
+<td type="button" value="6" onclick="x.value +='6'">6</td>
+</tr>
+<tr bgcolor="blue">
+<td type="button" value="7" onclick="x.value +='7'">7</td>
+<td type="button" value="8" onclick="x.value +='8'">8</td>
+<td type="button" value="9" onclick="x.value +='9'">9</td>
+</tr>
+<tr bgcolor="orange">
+<td type="button" value="0" onclick="x.value +='0'">0</td>
+<td type="button" value="." onclick="x.value +='.'">.</td>
+<td type="button" value="Exp" onclick="x.value +='**'">^</td>
+</tr>
+<tr bgcolor="blue">
+<td type="button" value="+" onclick="x.value +='+'">+</td>
+<td type="button" value="-" onclick="x.value +='-'">-</td>
+<td type="button" value="÷" onclick="x.value +='/'">÷</td>
+</tr>
+<tr bgcolor="orange">
+<td type="button" value="×" onclick="x.value +='*'">×</td>
+<td type="button" value="=" onclick="x.value=eval(x.value)">=</td>
+<td type="button" value="Clear" onclick="x.value=''" id="y">DEL</td>
+</tr>
+<tr bgcolor="blue">
+<td type="button" value="(" onclick="x.value +='('">(</td>
+<td type="button" value=")" onclick="x.value +=')'">)</td>
+<td type="button" value="AC" onclick="f()">AC</td>
+</tr>
+</table>
+<script>
+function f(){
+    var a  = document.getElementById('x').value;
+    document.getElementById('x').value=a.substring(0,a.length -1);
+}
+</script>
+<footer><font color="white">©RM</font></footer>
+</body>
+</html>
