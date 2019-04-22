@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Page Title</title>
+        <style>
+   #x{ background-color:#8DBC;
+   height:460px;
+   width:device-length;
+   margin:70px;
+   padding:70px;    
+   } 
+   #y{width:300px;
+   height:90px;
+   } 
+   #a{width:100px;
+   height:40px;
+   } 
+   #j{width:device-width;}
+        </style>
+    </head>
+    <body bgcolor="#DEEB">
+     <div id="x">
+   <button onclick=y.value='' id="a">CLR</button></br> </br>
+  <input value=""readonly id="y"></br></br>
+  <button onclick=y.value+='1' id="a">1</button>
+  <button onclick=y.value+='2' id="a">2</button> 
+  <button onclick=y.value+='3' id="a">3</button> 
+  <button onclick="fcos()" id="a">COSX</button> 
+  <button onclick="fsin()" id="a">SINX</button> 
+  <button onclick="ftan()" id="a">TANX</button> 
+   </br> </br>
+  <button onclick=y.value+='4' id="a">4</button>
+  <button onclick=y.value+='5' id="a">5</button>
+  <button onclick=y.value+='6' id="a">6</button> 
+  <button onclick="flog()" id="a">Logx</button>  
+   <button onclick="fsqt()" id="a">√</button> 
+    <button onclick="fM()" id="a">mod</button> 
+  </br> </br>
+  <button onclick=y.value+='7' id="a">7</button>
+  <button onclick=y.value+='8' id="a">8</button>
+  <button onclick=y.value+='9' id="a">9</button> 
+   <button onclick=y.value+='**2' id="a">x^2</button>
+  <button onclick="fpi()" id="a">π</button>   
+  <button onclick="y.value+=','" id="a">,</button>    
+  </br> </br>
+  <button onclick=y.value+='+' id="a">+</button>
+  <button onclick=y.value+='-' id="a">-</button>
+  <button onclick=y.value+='*' id="a">×</button> 
+  </br> </br>
+  <button onclick=y.value+='/' id="a">÷</button>
+  <button onclick=y.value=eval(y.value) id="a">=</button> 
+  <button onclick=y.value+='0' id="a">0</button> </br></br>
+   <button onclick=y.value+='(' id="a">(</button>
+  <button onclick="f()" id="a">AC</button>
+  <button onclick=y.value+=')' id="a">)</button> </form>
+     </div>   
+ Note:For functions first enter the value then click on the function.    
+     <script>
+   function f(){
+    var a  = document.getElementById('y').value;
+    document.getElementById('y').value=a.substring(0,a.length -1);
+}
+function fcos(){
+y.value=Math.cos(y.value);
+}
+function fsin(){
+y.value=Math.sin(y.value);}
+function ftan(){
+y.value=Math.tan(y.value);}
+function flog(){
+y.value=Math.log(y.value);}
+function fsqt(){
+y.value=Math.sqrt(y.value);}
+function fM(){
+y.value=Math.abs(y.value);}
+function fpi(){
+y.value=Math.PI;}
+     </script>
+    </body>
+</html>
